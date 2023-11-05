@@ -14,7 +14,9 @@ def result():
         result['Student Number']=request.form.get('StudentNumber')
         result['Gender']=request.form.get('Gender')
         result['Major']=request.form.get('Major')
-        result['Programming Languages']=request.form.getlist('ProgrammingLanguages')
+        checkbox_values = request.form.getlist('Programming Languages')
+        selected_values = ', '.join(checkbox_values)
+        result['Programming Languages'] = selected_values
         return render_template('result.html',result=result)
 
 
