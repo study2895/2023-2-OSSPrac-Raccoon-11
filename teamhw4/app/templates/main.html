@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h1> Team11 Raccoon</h1>
+    <form action="/result" method="POST">
+        <p><b>* Name</b> <input type='text' id='name' name='name' /></p>
+        <p><b>* Student Number</b> <input type='text' id='StudentNumber' name='StudentNumber' /></p>
+        <p><b>* Major</b> <input type='text' id='Major' name='Major' /></p>
+        <p><b>* Email</b> <input class="box" name="domaintxt" id="domaintxt" type="text" />&nbsp;@
+            <select class="box" name="domainlist" id="domainlist">
+                <option value="type">선택</option>
+                <option value="gmail.com">gmail.com</option>
+                <option value="naver.com">naver.com</option>
+                <option value="daum.net">daum.net</option>
+                <option value="hanmail.net">hanmail.net</option>
+                <option value="kakao.com">kakao.com</option>
+                <option value="dgu.ac.kr">dgu.ac.kr</option>
+                <option value="dongguk.edu">dongguk.edu</option>
+            </select></p>
+        <p><b>* Gender</b></p>
+        <label><input type="radio" name="Gender" value="Male" >Male</label>
+        <label><input type="radio" name="Gender" value="Female" checked>Female</label>
+        <p><b>* Programming Languages</b></p>
+        <input type="checkbox" id="PL" name="Programming Languages" value="Python" checked >Python</label>
+        <input type="checkbox" id="PL" name="Programming Languages" value="Java">Java</label>
+        <input type="checkbox" id="PL" name="Programming Languages" value="HTML">HTML</label>
+        <input type="checkbox" id="PL" name="Programming Languages" value="C++" checked >C++</label>
+        
+        
+
+        <p><button type='submit' name='submit' value='submit'>submit</button></p>
+    </form>
+</body>
+</html>
