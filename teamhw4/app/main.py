@@ -12,7 +12,7 @@ def result():
         result=dict()
         result['Name']=request.form.get('name')
         result['Student Number']=request.form.get('StudentNumber')
-         result['University']=request.form.get('University')
+        result['University']=request.form.get('University')
         result['Major']=request.form.get('Major')
     
         domainlist = request.form.get('domainlist')
