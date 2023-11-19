@@ -14,13 +14,12 @@ def result():
         result['Student Number']=request.form.get('StudentNumber')
         result['University']=request.form.get('University')
         result['Major']=request.form.get('Major')
-    
         domainlist = request.form.get('domainlist')
         domaintxt = request.form.get('domaintxt')
         if domainlist != 'type': 
             result['Email'] = f'{domaintxt}@{domainlist}'
         else:
-            result['Email'] = '도메인을 선택해주세요.'
+            result['Email'] = '오류입니다.'
         result['Gender']=request.form.get('Gender')
         checkbox_values = request.form.getlist('Programming Languages')
         result['Programming Languages'] = ', '.join(checkbox_values)
@@ -29,4 +28,4 @@ def result():
 
 
 if __name__ =='__main__':
-    app.run(host="0.0.0.0", debug=True, port=5000)
+    app.run(host="0.0.0.0", debug=True, port=5002)

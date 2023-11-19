@@ -1,0 +1,8 @@
+version: '3.0'
+
+services:
+  app:
+    build: .
+    image: study2895/flask:3.0
+    ports:
+      - "5002:5002"
