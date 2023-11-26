@@ -3,6 +3,6 @@ version: '3.0'
 services:
   web:
     build: .
-    image: study2895/flask:4.0
+    image: study2895/flask:3.0
     ports:
       - "5000:5000"
