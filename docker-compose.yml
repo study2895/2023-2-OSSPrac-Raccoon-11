@@ -1,8 +1,8 @@
 version: '3.0'
 
 services:
-  app:
+  web:
     build: .
     image: study2895/flask:3.0
     ports:
-      - "8080:5002"
+      - "5002:5002"
