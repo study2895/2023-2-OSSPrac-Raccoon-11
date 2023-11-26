@@ -1,0 +1,50 @@
+pipeline {
+    agent any  
+
+	triggers {
+			pollSCM('*/3 * * * *')
+	} 
+
+    environment {
+        DOCKER = credentials('dockerhub')    
+    } 
+
+    stages {
+        stage('Prepare') {
+	 agent any 
+	
+            steps {							
+		git url : 'https://github.com/CSID-DGU/2023-2-OSSPrac-Raccoon-11.git',
+						branch : 'main',
+						credentialsId: 'github'
+            }
+        }
+
+
+        stage('Build') {
+            
+            steps {
+                dir('/var/jenkins_home/workspace/hw6_c'){
+                    sh 'docker compose build web'
+                }
+           }
+        }
+
+        stage('Tag') {
+            steps {
+                script {
+                    sh "docker tag ${DOCKER_USR}/flask ${DOCKER_USR}/flask:${BUILD_NUMBER}"
+                }
+            }
+        }
+
+        stage('Push') {
+            steps {
+                script {
+                    sh "docker login -u $DOCKER_USR -p $DOCKER_PSW"
+		            sh "docker push ${DOCKER_USR}/flask:${BUILD_NUMBER}"
+                }
+            }
+        }
+    }
+}
