@@ -6,6 +6,18 @@
 | 팀원  | 건축공학전공 | 정지원 | 20학번 |
 | 팀원  | 사학과      | 박주한  | 19학번 |
 
+##기술 스택
+* Python
+* HTML5
+* WSL Ubuntu, Linux, VM
+* Nginx & Flask & uWSGI (docker tiangolo/uwsgi-nginx-flask)
+* Docker container, Compose, image, hub, .yml 파일 작성
+* Jenkins Pipeline
+* Git, Github, Slack
+* AWS EC2, IAM+MFA, CLI
+* VSC, debugging(stack, queue)
+
+
 ### 과제 목록
 * [일반 과제] [팀과제 1] 팀과제 수행을 위한 팀 구성
 * [팀 과제] (2) 팀 소통 환경 구성
