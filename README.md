@@ -7,6 +7,8 @@
 | 팀장  | 전기전자공학부 | 양승경 | 21학번 |
 | 팀원  | 건축공학전공 | 정지원 | 20학번 |
 | 팀원  | 사학과      | 박주한  | 19학번 |
+
+지도교수: 이길섭 교수님
 ## 📌 기술 스택  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
